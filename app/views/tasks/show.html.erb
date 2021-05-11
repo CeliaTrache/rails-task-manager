@@ -3,9 +3,11 @@
 <p><%= @task.details %></p>
 
 <% if @task.completed %>
-  <p>This task is completed</p>
-<% elsif %>
-  <p>This task is not completed yet</p>
+  <%# <i class="far fa-check-square"></i> %>
+  <p>This task is completed</p></br>
+<% else %>
+  <%# <i class="far fa-square"></i> %>
+  <p>This task is not completed yet<pi></br>
 <% end %>
 
 <%= link_to("Edit this task", edit_task_path(@task)) %></br>
